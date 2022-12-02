@@ -1,18 +1,18 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import Sv from './ScrollView';
-import Th from './TouchableHighlight';
-import Ti from './TextInput';
-import Fl from './flatList';
-import Sl from './sectionList';
-import Nv from './NewView';
-import Btn from './ourButton';
-import To from './touchableOpacity';
-import Kb from './keyBoardEvents';
-import Fi from './fetchAPI';
-import Cn from './countNumber';
-import Anime from './API/animation' 
+import Sv from './Practice/ScrollView';
+import Th from './Practice/TouchableHighlight';
+import Ti from './Practice/TextInput';
+import Fl from './Practice/flatList';
+import Sl from './Practice/sectionList';
+import Nv from './Practice/NewView';
+import Bt from './Practice/ourButton';
+import To from './Practice/touchableOpacity';
+import Kb from './Practice/keyBoardEvents';
+import Fi from './Practice/fetchAPI';
+import Cn from './Practice/countNumber';
+import Anime from './API/animation'; 
 const ComponentFunc = () => {
 
     return (
