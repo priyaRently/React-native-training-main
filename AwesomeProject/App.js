@@ -10,17 +10,19 @@ import Sl from './Practice/sectionList';
 import Nv from './Practice/NewView';
 import Bt from './Practice/ourButton';
 import To from './Practice/touchableOpacity';
-import Kb from './Practice/keyBoardEvents';
+import Kb from './API/keyBoardEvents';
 import Fi from './Practice/fetchAPI';
 import Cn from './Practice/countNumber';
 import Anime from './API/animation'; 
 import Geo from './API/geoLoactionApi';
+import Cam from './API/camera';
+import Effect from './Hooks/useEffect';
 
 const ComponentFunc = () => {
 
     return (
         <View>
-              <Geo/>        
+              <Cam/>        
         </View>
     );
 };
