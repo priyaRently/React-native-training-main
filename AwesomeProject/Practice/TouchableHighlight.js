@@ -1,14 +1,13 @@
 import React from 'react';
 import {
-     View, Image, Text, StyleSheet,
-     TextInput, SafeAreaView, TouchableHighlight, Alert
+     View, Text, StyleSheet, TouchableHighlight, TouchableOpacity
 } from 'react-native';
 
 const componentFuncTH = () => {
      const [count, setCount] = React.useState(0);
      const onPress = () => {
           if (count >= 10)
-               Alert.alert("Reached Maximum Limit");
+               alert("Reached Maximum Limit");
           else
                setCount(count + 1);
      };
@@ -22,6 +21,15 @@ const componentFuncTH = () => {
                <View style={style.countContainer}>
                     <Text style={style.countText}> {count} </Text>
                </View>
+
+               <TouchableOpacity style={[style.button,]}
+                    onPress={() => {onPress();}}>
+                    <Text style={style.text}> CLICK HERE </Text>
+               </TouchableOpacity>
+               <View style={style.countContainer}>
+                    <Text style={style.countText}> {count} </Text>
+               </View>
+               
           </View>
      );
 };
@@ -33,6 +41,7 @@ const style = StyleSheet.create({
           backgroundColor: 'grey',
           padding: 10
      },
+     button: { backgroundColor: 'skyblue', margin: 30 },
      countContainer: { alignItems: 'center' },
      countText: { color: 'black', fontSize: 20 }
 });
