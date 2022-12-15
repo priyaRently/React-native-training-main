@@ -1,25 +1,16 @@
+import { View, Text } from 'react-native';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './src/Screens/home';
-import Profile from './src/Screens/profile';
-const Stack = createNativeStackNavigator();
+import Routes from './src/routes';
+import Nest from './src/Nesting/nesting';
+import Modal from './src/modal';
+import Drawers from './src/DrawerNavigation/drawer'; 
 
-const Details = () => {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator screenOptions={{
-                headerStyle: { backgroundColor: '#f4511e' },
-                headerTintColor: '#fff',
-                headerTitleAlign: 'center',
-                headerTitleStyle: { fontWeight: 'bold' }
-            }} >
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Profile" component={Profile}
-                    options={({ route }) => ({ title: route.params.name })} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
-};
+const App = () => {
+  return (
+    <>
+      <Drawers/>
+    </>
+  )
+}
 
-export default Details;
+export default App;

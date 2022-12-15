@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './home';
-import Profile from './profile';
+import HomeScreen from './Screens/home';
+import ProfileScreen from './Screens/profile';
 const Stack = createNativeStackNavigator();
 
 const Details = () => {
@@ -14,8 +14,8 @@ const Details = () => {
                 headerTitleAlign: 'center',
                 headerTitleStyle: { fontWeight: 'bold' }
             }} >
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Profile" component={Profile}
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Profile" component={ProfileScreen}
                     options={({ route }) => ({ title: route.params.name })} />
             </Stack.Navigator>
         </NavigationContainer>
