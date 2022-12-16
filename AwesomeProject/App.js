@@ -22,7 +22,7 @@ const ComponentFunc = () => {
 
     return (
         <View>
-              <Cn/>        
+              <Cam/>        
         </View>
     );
 };

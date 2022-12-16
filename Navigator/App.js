@@ -4,11 +4,11 @@ import Routes from './src/routes';
 import Nest from './src/Nesting/nesting';
 import Modal from './src/modal';
 import Drawers from './src/DrawerNavigation/drawer'; 
-
+import Flows from './src/Flows/authentication';
 const App = () => {
   return (
     <>
-      <Drawers/>
+      <Flows/>
     </>
   )
 }
