@@ -45,13 +45,6 @@ function Profile() {
     );
   }
 
-function Settings() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={styles.text}>Setting Screen</Text>
-      </View>
-    );
-  }
 const nesting = () => {
     
     return (
