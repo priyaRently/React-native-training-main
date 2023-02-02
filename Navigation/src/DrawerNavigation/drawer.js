@@ -13,11 +13,11 @@ function HomeScreen() {
     </View>
   );
 }
-
 function NotificationsScreen() {
   return (
     <View style={{
-      flex: 1, alignItems: 'center',
+      flex: 1, 
+      alignItems: 'center',
       justifyContent: 'center'
     }}>
       <Text>Notifications Page</Text>
@@ -28,7 +28,8 @@ function NotificationsScreen() {
 function AboutScreen() {
   return (
     <View style={{
-      flex: 1, alignItems: 'center',
+      flex: 1, 
+      alignItems: 'center',
       justifyContent: 'center'
     }}>
       <Text>About Page</Text>

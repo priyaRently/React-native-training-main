@@ -3,7 +3,7 @@ import * as React from 'react'
 
 const AuthContext = React.createContext();
 
-const signIn = () => {
+const SignIn = () => {
     const [username, setUsername] = React.useState('');
     const [password, setPassword] = React.useState('');
 
@@ -27,4 +27,4 @@ const signIn = () => {
     );
 }
 
-export default signIn;  
+export default SignIn;  
