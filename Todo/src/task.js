@@ -9,8 +9,7 @@ export default Task = (props) => {
     return (
         <View style={styles.container}>
             <View style={styles.indexContainer}>
-                <CheckBox 
-                    
+                <CheckBox  
                     value={isSelected}
                     onValueChange={(newValue)=> {
                         setSelection(newValue);

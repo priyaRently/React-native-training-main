@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 10,
-        
         bottom: 20,
     },
     inputField: {
