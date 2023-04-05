@@ -8,7 +8,7 @@ import Flows from './src/Flows/authentication'
 const App = () => {
   return (
     <>
-      <Routes/>
+      <Modal/>
     </>
   )
 }
